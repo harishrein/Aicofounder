@@ -1,14 +1,14 @@
 import { Router } from 'express';
-import { authenticate } from '@/middleware/auth';
-import * as authController from '@/controllers/authController';
-import * as chatController from '@/controllers/chatController';
-import * as dashboardController from '@/controllers/dashboardController';
-import * as agentsController from '@/controllers/agentsController';
-import * as clientsController from '@/controllers/clientsController';
-import * as financeController from '@/controllers/financeController';
-import * as leadsController from '@/controllers/leadsController';
-import * as projectsController from '@/controllers/projectsController';
-import * as approvalsController from '@/controllers/approvalsController';
+import { authenticate } from './middleware/auth';
+import * as authController from './controllers/authController';
+import * as chatController from './controllers/chatController';
+import * as dashboardController from './controllers/dashboardController';
+import * as agentsController from './controllers/agentsController';
+import * as clientsController from './controllers/clientsController';
+import * as financeController from './controllers/financeController';
+import * as leadsController from './controllers/leadsController';
+import * as projectsController from './controllers/projectsController';
+import * as approvalsController from './controllers/approvalsController';
 
 const router = Router();
 
