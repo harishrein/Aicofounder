@@ -50,15 +50,7 @@ app.get('/health', (req, res) => {
 });
 
 // API Routes
-app.use('/api/auth', authRoutes);
-app.use('/api/chat', chatRoutes);
-app.use('/api/dashboard', dashboardRoutes);
-app.use('/api/agents', agentsRoutes);
-app.use('/api/clients', clientsRoutes);
-app.use('/api/finance', financeRoutes);
-app.use('/api/leads', leadsRoutes);
-app.use('/api/projects', projectsRoutes);
-app.use('/api/approvals', approvalsRoutes);
+app.use('/api', routes);
 
 // Error handling middleware
 app.use(errorHandler);
