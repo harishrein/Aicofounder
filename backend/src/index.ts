@@ -12,16 +12,8 @@ import { errorHandler } from '@/middleware/errorHandler';
 import { rateLimiter } from '@/middleware/rateLimiter';
 import { setupSocketIO } from '@/services/websocketService';
 
-// Route imports
-import authRoutes from '@/controllers/authController';
-import chatRoutes from '@/controllers/chatController';
-import dashboardRoutes from '@/controllers/dashboardController';
-import agentsRoutes from '@/controllers/agentsController';
-import clientsRoutes from '@/controllers/clientsController';
-import financeRoutes from '@/controllers/financeController';
-import leadsRoutes from '@/controllers/leadsController';
-import projectsRoutes from '@/controllers/projectsController';
-import approvalsRoutes from '@/controllers/approvalsController';
+// Routes import
+import routes from './routes';
 
 // Load environment variables
 dotenv.config();
