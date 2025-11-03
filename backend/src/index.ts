@@ -6,11 +6,11 @@ import dotenv from 'dotenv';
 import { createServer } from 'http';
 import { Server } from 'socket.io';
 
-import { connectDatabase } from '@/config/database';
-import { logger } from '@/utils/logger';
-import { errorHandler } from '@/middleware/errorHandler';
-import { rateLimiter } from '@/middleware/rateLimiter';
-import { setupSocketIO } from '@/services/websocketService';
+import { connectDatabase } from './config/database';
+import { logger } from './utils/logger';
+import { errorHandler } from './middleware/errorHandler';
+import { rateLimiter } from './middleware/rateLimiter';
+import { setupSocketIO } from './services/websocketService';
 
 // Routes import
 import routes from './routes';
